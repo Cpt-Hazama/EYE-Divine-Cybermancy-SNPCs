@@ -1,0 +1,13 @@
+"refract" 
+{ 
+"$model" "1" 
+"$bluramount" "1" 
+"$surfaceprop" "glass" 
+"$refractamount" ".100" 
+"$normalmap" "models\federal\fs_predator_bump" 
+"$scale" "[1 1]" 
+// "$dudvmap" "models\federal\fs_predator_dudv" 
+"$envmap" "env_cubemap" 
+"$envmaptint" "[.7 .7 .7]" 
+"$REFRACTTINT" "{180 180 180}"
+}

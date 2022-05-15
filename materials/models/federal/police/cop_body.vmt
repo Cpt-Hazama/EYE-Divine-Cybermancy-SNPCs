@@ -1,0 +1,42 @@
+"VertexLitGeneric"
+{
+ "$baseTexture" "models\federal/police/cop_body"
+ "$bumpmap" "models\federal\police/cop_body_nm"
+ 
+	"$envmap" "env_cubemap"
+	//"$envmap" "CustomCubeMaps/SimpleSpec"
+	"$normalmapalphaenvmapmask" "1"
+	// "$envmaptint" "[ .25 .25 .25 ]"
+	"$envmaptint" "[ .01 .01 .01 ]"
+		
+	"$phong" "1"
+	"$phongexponent" "9"
+	"$phongboost" ".4"	
+	"$phongfresnelranges"	"[3 2.1 9]"
+	
+	"$nocull" "1"
+	
+	"$RIMLIGHT" "1"
+	"$RIMLIGHTEXPONENT" "4"
+	"$RIMLIGHTBOOST"  ".1"
+	"$rimmmask" "1"
+ 
+ "$phongwarptexture"  "models/wrap/greenmanduco.vtf"
+
+ //EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "0.5" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"Proxies"
+        {
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+}

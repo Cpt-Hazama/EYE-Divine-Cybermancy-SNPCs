@@ -1,0 +1,47 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/federal/FS/FS_head"
+	"$bumpmap" "models/federal/FS/FS_head_normal"
+
+	"$nocull" "1"
+
+	"$selfillum" "1"
+
+	//phong parameters
+
+	"$phong" "1"
+	"$phongboost" "15"
+	"$phongexponent" "35"
+	"$phongfresnelranges" "[.4 .8 2]"
+	"$phongtint" "[ 0.4 0.6 0.8 ]"
+	
+	// Environment map
+	"$normalmapalphaenvmapmask" "1" // Not supported when self illum fresnel is enabled!
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.15 0.15 0.15]"
+	
+// Cloaking
+	"$cloakPassEnabled" "1"
+	
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "1" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"$eyevisiononlysoundt"			"0"	//Do not use eyevision, only soundt
+	
+	"Proxies"
+        {
+			"player_invis"
+				{
+				}
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+}

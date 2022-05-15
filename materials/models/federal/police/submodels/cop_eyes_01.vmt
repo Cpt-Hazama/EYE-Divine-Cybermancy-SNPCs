@@ -1,0 +1,43 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/federal/police/submodels/cop_eyes_01"
+	// "$bumpmap" "models/federal/police/submodels/cop_eyes_01_bump"
+	
+		
+	 "$envmap" "env_cubemap"
+	 // "$normalmapalphaenvmapmask" 1
+	 "$envmaptint" "[ 1 1 1]"
+	
+	 // "$rimlight" "1"
+	 // "$rimlightexponent" "1"
+	 // "$rimlightboost" "4"
+
+
+	// "$phong" "1"
+	// "$phongexponent" 9
+	// "$phongboost"	"2"
+	// "$phongfresnelranges"	"[1 1.2 1]"
+	
+// Cloaking
+	"$cloakPassEnabled" "1"
+	
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "2" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"Proxies"
+        {
+			"player_invis"
+				{
+				}
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+}

@@ -1,0 +1,33 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\federal/police/cop_head_3"
+	"$bumpmap" "models\federal/police/cop_head_nm"
+
+	//phong parameters
+
+	"$phong" "1"
+	"$phongboost" "4"	
+	"$phongexponent" "7"
+	"$phongfresnelranges"	"[.2 .5 5]"
+	"$phongtint" "[.85 .85 1]"
+
+	"$lightwarptexture" "gradient/gradient_skin"
+	
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "0" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"Proxies"
+        {
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+
+}

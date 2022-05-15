@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\federal/trooper_colormaps"
+	"$bumpmap" "models\federal\trooper_normals"
+		
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "7"	
+	"$phongfresnelranges"	"[3 2.1 9]"
+	"$phongtint" "[.8 1 1]"
+	
+	
+	"$nocull" "1"
+	
+	"$phongwarptexture"  "models/wrap/redforma"
+	"$lightwarptexture" "gradient/gradient_skin"
+
+}
+

@@ -1,0 +1,47 @@
+"VertexLitGeneric"
+{
+	"$color"				"[1 1 1]"
+	"$baseTexture"			"models\federal\fs_body"
+	"$bumpMap"				"models\federal\fs_body_bump"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.01 .01 .01 ]"
+	
+	"$phong" "1"
+	"$phongexponent" "7"
+	"$phongboost" "2" 
+	"$phongfresnelranges" "[7 10 7]"
+	
+	
+	"$RIMLIGHT" "1"
+	"$RIMLIGHTEXPONENT" "10"
+	"$RIMLIGHTBOOST"  "0.3"
+	
+	 "$phongwarptexture"  "models/wrap/greenmanduco.vtf"
+	 
+// Cloaking
+	"$cloakPassEnabled" "1"
+
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "2" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"$eyevisiononlysoundt"			"0"	//Do not use eyevision, only soundt
+	
+	"Proxies"
+        {
+			"player_invis"
+				{
+				}
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+}

@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/federal/police/submodels/cop_beret_01"
+	"$surfaceprop" "flesh"
+	"$model" 1 
+	// "$bumpmap" "models/federal/police/submodels/cop_beret_01_bump"
+	
+	// "$phong" "1"
+	// "$phongexponent" "10"
+	// "$phongboost" "2"	
+	// "$phongfresnelranges"	"[0.1 0.5 1]"
+	
+
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "0.5" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"Proxies"
+        {
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+}

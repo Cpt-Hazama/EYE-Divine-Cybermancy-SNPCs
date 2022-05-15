@@ -1,0 +1,53 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\federal\soldier\soldier_armor"
+	"$bumpmap"	"models\federal\soldier\soldier_armor_normal"
+	"$envmap" "env_cubemap"
+	// "$envmap" "CustomCubeMaps/SimpleSpec"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[ .01 .01 .01 ]"
+		
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "5"	
+	"$phongfresnelranges"	"[3 2.1 9]"
+	
+	"$RIMLIGHT" "1"
+	"$RIMLIGHTEXPONENT" "4"
+	"$RIMLIGHTBOOST"  "1"
+	"$rimmmask" "1"
+	
+	"$nocull" "1"
+	
+	// "$detail" "detail\metal_detail_01"
+	// "$detailscale" "10.8283"
+	// "$detailblendfactor" "0.5"
+	// "$detailblendmode" "0"	
+	
+	"$phongwarptexture"  "models/wrap/coldblue"
+
+// Cloaking
+	"$cloakPassEnabled" "1"
+	
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "1" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"$eyevisiononlysoundt"			"0"	//Do not use eyevision, only soundt
+	
+	"Proxies"
+        {
+			"player_invis"
+				{
+				}
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+}

@@ -1,0 +1,38 @@
+"VertexLitGeneric"
+{
+	"$color"				"[1 1 1]"
+	"$baseTexture"			"models/eye/JSD_Urbanmed_eye"
+	"$selfillum" 				1
+	"$nocull" 1
+	"$bumpMap"				"models/eye/JSD_Urbanmed_eye_bump"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0
+	"$envmapsaturation" 1
+	"$envmaptint" "[1 .8 .6 ]"
+	"$envmap" "env_cubemap"
+
+// Cloaking
+	"$cloakPassEnabled" "1"
+	
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  ".5" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"$eyevisiononlysoundt"			"0"	//Do not use eyevision, only soundt
+	
+	"Proxies"
+        {
+			"player_invis"
+				{
+				}
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+}

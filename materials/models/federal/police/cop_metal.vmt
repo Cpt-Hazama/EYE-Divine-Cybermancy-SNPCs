@@ -1,0 +1,44 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/federal/police/cop_metal"
+	"$bumpmap" "models/federal/police/cop_metal_normal"
+
+	"$nocull" "1"
+
+	"$selfillum" "1"
+
+	//phong parameters
+
+	"$phong" "1"
+	"$phongboost" "15"
+	"$phongexponent" "35"
+	"$phongfresnelranges" "[.4 .8 2]"
+	"$phongtint" "[ 0.4 0.6 0.8 ]"
+	
+	// Environment map
+	"$normalmapalphaenvmapmask" "1" // Not supported when self illum fresnel is enabled!
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1 0.4 0]"
+	"$envmapfresnel" "1"
+	"$envmapFresnelMinMaxExp" "[0 5 .4]"
+	
+// Cloaking
+	"$cloakPassEnabled" "1"
+	
+//EYE vision
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "0.5" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"Proxies"
+	{
+		  "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+	}
+}

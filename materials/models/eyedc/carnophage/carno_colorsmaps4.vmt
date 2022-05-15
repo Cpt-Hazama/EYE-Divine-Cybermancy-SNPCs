@@ -1,0 +1,53 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\eyedc\carnophage\carno_colorsmaps"
+	"$bumpmap" "models\eyedc\carnophage\carno_normalsmaps"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+//	"$envmapsaturation" 0.5
+	"$envmaptint" "[ 0.025 0.025 .025 ]"
+	"$alpha" 1
+	"$halflambert" 1
+//	"$translucent" "1"
+	"$nocull" 1
+	"$alphatest" 1
+
+//	"$phongwarptexture" "models\eyedc\carnophage/carno_phongwarp"
+		
+	"$phong" "1"
+//	"$phongexponent" 7
+	"$phongexponent" 8
+//	"$phongexponenttexture" "models\eyedc\carnophage\carno_normalsmaps"
+	"$phongboost"	"0.6"
+//	"$phongfresnelranges"	"[0.15 0.75 1]"
+		"$phongfresnelranges"	"[0.2 0.5 1]"
+//	"$phongtint"  "[ 0.9 0.6 0.5 ]"
+	"$phongtint"  "[ 0.8 0.6 0.5 ]"	
+//	"$phongtint"  "[ 0.9 0.8 0.7 ]"	
+	
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "100"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" "0.25"										// Boost for ambient cube component of rim lighting
+//	"$rimmask" "1"
+
+//EYE VISION
+	"$sensitivewPassEnabled" "1"//Enable sensitive wave for this npc
+    "$eyevisionBlendEnabled"      "1" // Enables eyevision for this npc
+
+    "$eyevisionbrightnesslevel"  "0.5" //scale brightness during eyevision
+    "$disallowevchanges"        "1" //should be use for all npcs
+	
+	"$eyevisiononlysoundt"      "1" //Do not use eyevision really, only soundt
+ 
+	"Proxies"
+        {
+            "vs_eyevision"
+				{
+                }
+            "vs_sensitivewave"
+                {
+                }
+        }
+
+}
